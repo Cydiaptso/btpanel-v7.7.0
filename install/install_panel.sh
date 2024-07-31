@@ -716,7 +716,7 @@ echo "
 "
 while [ "$go" != 'y' ] && [ "$go" != 'n' ]
 do
-	read -p "您想将宝塔安装到 $setup_path 现在目录?(y/n): " go;
+	read -p "您想将宝塔安装到 $setup_path 这个目录?(y/n): " go;
 done
 
 if [ "$go" == 'n' ];then
