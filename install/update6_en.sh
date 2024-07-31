@@ -42,7 +42,7 @@ version=$(curl -Ss --connect-timeout 5 -m 2 https://brandnew.aapanel.com/api/pan
 if [ "$version" = '' ];then
 	version='6.8.16'
 fi
-wget -T 5 -O /tmp/panel.zip https://raw.githubusercontent.com/lzl0306/btpanel-v7.7.0/main/install/src/LinuxPanel-7.7.0.zip
+wget -T 5 -O /tmp/panel.zip https://raw.githubusercontent.com/Cydiaptso/btpanel-v7.7.0/main/install/src/LinuxPanel-7.7.0.zip
 dsize=$(du -b /tmp/panel.zip|awk '{print $1}')
 if [ $dsize -lt 10240 ];then
 	echo "Failed to get update package, please update or contact aaPanel Operation"
@@ -54,7 +54,7 @@ cd $setup_path/server/panel/
 check_bt=`cat /etc/init.d/bt`
 if [ "${check_bt}" = "" ];then
 	rm -f /etc/init.d/bt
-	wget -O /etc/init.d/bt https://raw.githubusercontent.com/lzl0306/btpanel-v7.7.0/main/install/src/bt6.init -T 20
+	wget -O /etc/init.d/bt https://raw.githubusercontent.com/Cydiaptso/btpanel-v7.7.0/main/install/src/bt6.init -T 20
 	chmod +x /etc/init.d/bt
 fi
 rm -f /www/server/panel/*.pyc
