@@ -13,6 +13,12 @@ curl -sSO https://raw.githubusercontent.com/Cydiaptso/btpanel-v7.7.0/main/instal
 curl -sSO http://d.moe.ms/AAAAA/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
 ```
 
+**备用安装链接，适用于不能访问GitHub的服务器。(http://jb.aptso.co/Cydiaptso/btpanel-v7.7.0)**
+
+```
+curl -sSO http://jb.aptso.co/Cydiaptso/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
+```
+
 # 手动破解：
 
 1，屏蔽手机号
